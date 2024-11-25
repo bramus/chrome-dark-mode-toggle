@@ -65,11 +65,16 @@ In contrast, this extension works with any site, as long as the site implements 
 
 #### What do I need to run this extension?
 
-This extension uses the [Web Preferences API](https://wicg.github.io/web-preferences-api/), an API that is currently only available in Chrome 125+ with the Experimental Web Platform Features flag enabled.
+This extension uses the [Web Preferences API](https://wicg.github.io/web-preferences-api/), an API that is currently only available in Chrome 125+ behind a flag.
 
-When this flag is not enabled, the extension shows a red N/A label on top of its icon.
+To enable the Web Preferences API, either:
 
-To enable Experimental Web Platform Features, visit `chrome://flags`, find the option in the list, and set it to enabled. Restart Chrome.
+- Launch Chrome with `--enable-features=WebPreferences`
+- Enable the “Experimental Web Platform Features” flag through `chrome://flags`
+
+Note that although the latter approach is easier, it enables more experimental features than just the Web Preferences API.
+
+When the Web Preferences API is not enabled, the extension shows a red N/A label on top of its icon.
 
 #### How do I change the mode of a site?
 
