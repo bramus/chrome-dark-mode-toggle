@@ -4,7 +4,7 @@ _Built by Bramus! – https://www.bram.us/_
 
 ## Real control over Light Mode / Dark Mode on a per-site basis!
 
-This extension allows you to override the value of `prefers-color-scheme` on a per-origin basis. That way, if a site uses `prefers-color-scheme` in their stylesheet, you can keep your OS in Light Mode while watching a site in Dark Mode (or vice versa).
+This extension allows you to override the value of `prefers-color-scheme` globally in Chrome, and also on a per-origin basis. That way, if a site uses `prefers-color-scheme` in their stylesheet, you can keep your OS in Light Mode while watching a site in Dark Mode (or vice versa).
 
 The override gets stored in the extension’s storage and gets synced to your Chrome profile so the next time you open the tab, the preference will be reapplied.
 
